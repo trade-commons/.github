@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Specification defect or change request
+    url: https://github.com/trade-commons/.github/blob/main/CONTRIBUTING.md
+    about: The Commons authors no specifications. A defect in UNTP, UNVTD, the WCO Data Model or a W3C specification goes to the body that governs it. See the contribution guide for routing.
+  - name: Security vulnerability
+    url: https://github.com/trade-commons/.github/blob/main/SECURITY.md
+    about: Do not open a public issue. Use private vulnerability reporting.

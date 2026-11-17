@@ -1,0 +1,35 @@
+name: Bug report
+description: Something behaves differently from what the documentation or the specification says.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the implementation is right and the specification is wrong, this is not the place. See the
+        contribution guide for how a specification defect is routed upstream.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what happened, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: The smallest sequence that shows it. Include the credential or payload where one is involved, with anything confidential removed.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Release, tag or commit. For a hosted service, the time it happened and the endpoint.
+    validations:
+      required: true
+  - type: input
+    id: specification
+    attributes:
+      label: Specification and version
+      description: Where relevant, which specification and version this is tested against, for example UNTP 0.8.0.

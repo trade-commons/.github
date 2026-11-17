@@ -1,0 +1,33 @@
+name: Change proposal
+description: Propose a behaviour or capability that does not exist yet.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What cannot be done today, and who is blocked by it. Describe the situation rather than the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you propose
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Where this belongs
+      description: The Commons builds engines; communities and standards bodies publish the declarations engines consume. A change that varies by sector or jurisdiction is usually a declaration rather than code.
+      options:
+        - Engine behaviour, the same for every sector and jurisdiction
+        - A declaration format the engines read
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: degradation
+    attributes:
+      label: Behaviour with no community declaration present
+      description: Every engine must work with no community declaration at all, producing a correct if unpolished result. Say what this produces in that case.
